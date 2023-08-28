@@ -1,0 +1,68 @@
+print("Welcome to my first project: a crazy random Quiz!")
+
+playing = input("Are you ready for the crazy random Quiz? ")
+
+if playing.lower() != "yes":
+    quit("Okay,you can always come back later!")
+
+print("Okay, lets play! " + "Are you ready?...it starts now!")
+score = 0
+
+answer = input("Whats the capital of Japan? ")
+if answer.lower() == "tokyo":
+    print("That was correct!")
+    score += 1
+else:
+    print("No, sorry! That was wrong!")
+
+answer = input("Whats the capital of australia? ")
+if answer.lower() == "canberra":
+    print("Nice!")
+    score += 1
+else:
+    print("Ups! That was wrong!")
+
+answer = input("What Year did the atomic bomb hit hiroshima? ")
+if answer.lower() == "1945":
+    print("Thats right!")
+    score += 1
+else:
+    print("Try again! That was wrong!")
+
+answer = input("Whats the name of the yellow electric type pokemon? " +
+               "Hint: its Ashs best friend!! ")
+if answer.lower() == "pikachu":
+    print("Yes!")
+    score += 1
+else:
+    print("oh no! That was wrong!")
+
+answer = input("Can you type your own name? ")
+if answer.lower() == "your own name":
+    print("that was tricky, but you got it!")
+    score += 0
+else:
+    print("thats wrong, read the question carefully!")
+
+answer = input("Whats Batmans alter Ego? ")
+if answer.lower() == "bruce wayne":
+    print("correctly!")
+    score += 1
+else:
+    print("ups! no!")
+
+answer = input("Whats the starting count of an array? ")
+if answer.lower() == "0":
+    print("oh yeah!")
+    score += 1
+else:
+    print("no no no no! Thats wrong!")
+
+print("You got " + str(score) + " questions right!")
+print("You got " + str((score / 7) * 100) + "%")
+if score > 4:
+    print("Congratulations!")
+else:
+    print("Please try again!")
+
+print("Thank you for playing this quiz, it was my first project so dont judge me to hard! " + "Thank you!")
